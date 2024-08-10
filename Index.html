@@ -13,11 +13,11 @@
     <nav>
         <h1 class="logo"><span>Bhu</span>palan.</h1>
         <ul id="sidemenu">
+            <li><i class="fas fa-times" onclick="closemenu()"></i></li>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fas fa-bars" id="faBars" onclick="openmenu()"></i>
     </nav>
@@ -25,12 +25,10 @@
         <div class="container">
             <div class="header-text">
                 <h1>Front end Developer</h1>
-                <p>Hi I'm Bhupalan looking for and entry level job</p>
+                <p id="intro"></p>
                 <div class="cont-cv">
-                    <button>
-                        <a href="images/BHUPALAN_K_CV.pdf" download>Download CV</a>
-                    </button>
-                    <button><a href="#contact">Contact Me</a></button>
+                    <a href="images/BHUPALAN_K_CV.pdf" download><button>Download CV</button></a>
+                    <a href="#contact"><button>Contact Me</button></a>
                 </div>
             </div>
             <div><img src="images/me.png" alt=""></div>
@@ -149,7 +147,8 @@
                     </div>
                     <div class="link-git">
                         <a href="https://exercises-ease.netlify.app/"><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/Bhupalan-K/Exercise-Ease-exercise-guide-"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/Bhupalan-K/Exercise-Ease-exercise-guide-"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
 
@@ -195,7 +194,7 @@
                         <a href="https://github.com/Bhupalan-K" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://wa.me/7373562627"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <a href="images/BHUPALAN_K_CV.pdf" download class="btn btn2" style="color: black;">Download CV</a>
+                    <a href="images/BHUPALAN_K_CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <span id="msg"></span>

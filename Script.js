@@ -3,6 +3,7 @@ var tabContents = document.getElementsByClassName("tab-contents");
 var sidemenu = document.getElementById("sidemenu")
 var clrform = document.getElementsByClassName("clrform");
 const faBars = document.getElementById("faBars")
+const intro = document.getElementById("intro")
 
 
 function openTab(tabName) {
@@ -23,8 +24,20 @@ function closemenu() {
 
 function openmenu() {
      sidemenu.style.right = "0px";
-     faBars.style.display = "none";
 }
+
+const text = "Hi I'm Bhupalan looking for an entry-level job";
+let index = 0;
+
+const displayIntro = () => {
+     if (index < text.length) {
+          intro.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(displayIntro, 50);
+     }
+}
+setTimeout(displayIntro, 900);
+
 // ------------------------contact-------------------------------
 const scriptURL = 'https://script.google.com/macros/s/AKfycbysPmtOi6Wp4C6J_P2TVJDQVFU6CiXRQVESN7VEWnKvsqePoIQpSQpJjNdAXHynKuv2Pg/exec';
 const form = document.forms['submit-to-google-sheet']

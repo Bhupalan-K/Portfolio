@@ -22,6 +22,7 @@ nav {
     top: 0;
     z-index: 1000;
     width: 100%;
+    background: black;
 }
 
 .logo {
@@ -39,11 +40,7 @@ nav {
 }
 
 nav i {
-    margin-top: 40px;
-}
-
-nav ul {
-    margin: 20px 0;
+    margin-top: 32px;
 }
 
 nav ul li {
@@ -77,6 +74,7 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 10%;
     font-size: 20px;
+    width: 70%;
 }
 
 .header-text h1 {
@@ -88,6 +86,11 @@ nav ul li a:hover::after {
     padding: 120px 3% 0 3%;
     background-size: cover;
     background-position: center;
+}
+
+#header p {
+    margin: 10px 0;
+    color: #fee715;
 }
 
 .container {
@@ -113,18 +116,29 @@ nav ul li a:hover::after {
 }
 
 .header-text button {
+    width: fit-content;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    background: #fee715;
-    color: black;
+    background: black;
+    border: 1px solid #fee715;
     border-radius: 5px;
+    transition: 0.5s;
     outline: none;
-    border: none;
+    color: white;
 }
 
 .header-text a {
     text-decoration: none;
+    color: white;
+}
+
+.header-text button:hover {
+    background: #fee715;
+    color: black;
+}
+
+.header-text a:hover {
     color: black;
 }
 
@@ -225,7 +239,7 @@ nav ul li a:hover::after {
 /* -------------projects------------- */
 
 #projects {
-    padding: 100px 5%;
+    padding: 100px 5% 0 5%;
 }
 
 .project-container {
@@ -247,16 +261,17 @@ nav ul li a:hover::after {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .project-list .list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     width: 250px;
     height: 350px;
+    margin-bottom: 20px;
 }
 
 .items {
@@ -376,8 +391,7 @@ nav ul li a:hover::after {
 
 /* ------------contact------------ */
 #contact {
-    padding: 100px 5%;
-
+    padding: 200px 5% 100px 5%;
 }
 
 #contact .container {
@@ -434,9 +448,18 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
     display: inline-block;
+    text-decoration: none;
+    background: black;
+    border: 1px solid #fee715;
+    margin-top: 30px;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.btn.btn2:hover {
     background: #fee715;
     color: black;
-    margin-top: 30px;
 }
 
 .contact-right form {
@@ -508,6 +531,10 @@ nav .fas {
     #about {
         height: 480px;
     }
+
+    #projects {
+        padding: 100px 5% 0 5%;
+    }
 }
 
 @media(max-width: 861px) {
@@ -516,10 +543,24 @@ nav .fas {
     }
 }
 
+@media(max-width: 450px) {
+    .header-text {
+        width: 100%;
+    }
+}
+
 @media(max-width: 410px) {
     .logo {
         font-size: 40px;
         margin-top: 20px;
+    }
+
+    #projects {
+        padding: 150px 5% 0 5%;
+    }
+
+    #contact {
+        padding: 100px 5% 30px 5%;
     }
 
 }
@@ -564,7 +605,6 @@ nav .fas {
 @media only screen and (max-width: 600px) {
 
     .header-text {
-        /* margin-top: 400px; */
         font-size: 16px;
     }
 
@@ -582,19 +622,17 @@ nav .fas {
     nav ul {
         background: #fee715;
         position: fixed;
-        top: -10px;
         right: -200px;
         width: 100px;
-        height: 45vh;
-        padding-top: 50px;
+        height: 40vh;
         color: black;
-        z-index: 2;
         transition: right 0.5s;
+        border-radius: 5px;
     }
 
     nav ul li {
         display: block;
-        margin: 25px 0 0 25px;
+        margin: 25px 0 0 14px;
     }
 
     nav ul li a {
